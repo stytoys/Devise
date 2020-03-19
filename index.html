@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Change</title>
+</head>
+<body>
+    <div id="box">
+     <h2>Taux de change</h2>
+     <table>
+         <tr>
+             <td><input  type="text" size="15" id="fromAmount" onkeyup="recupererValue()"/></td>
+             <td>
+                 <select id="from" onchange="recupererValue()">
+                   <option value="EUR">Europe (EUR)</option>
+                   <option value="USD">Dollars US (USD)</option>
+                   <option value="JPY">Japanese Yen (JPY)</option>
+                 </select>
+             </td>
+         </tr>
+         <tr>
+            <td><input type="text" size="15" id="toAmount" disabled/></td>
+             <td>
+                 <select id="to" onchange="recupererValue()">
+                   <option value="GBP">Livres(GBP)</option>
+                   <option value="JPY">Japanese Yen (JPY)</option>
+                   <option value="USD">Dollars US (USD)</option>
+                 </select>
+             </td>
+         </tr>
+     </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
